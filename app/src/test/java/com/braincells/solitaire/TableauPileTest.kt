@@ -20,7 +20,7 @@ class TableauPileTest {
         tableauPile.addCards(cards)
 
         // assert
-        assert(Equals(2, tableauPile.cards.size))
+        assertEquals(2, tableauPile.cards.size)
     }
 
     @Test
@@ -32,7 +32,7 @@ class TableauPileTest {
         tableauPile.removeCards(1)
 
         // assert
-        assert(Equals(mutableListOf(Card(4, clubs, true), tableauPile.cards)))
+        assertEquals(mutableListOf(Card(4, clubs, true)), tableauPile.cards)
     }
 
 }
