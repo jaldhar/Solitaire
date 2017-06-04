@@ -14,6 +14,7 @@ class Deck {
 
     fun reset() {
         cardsInDeck = cards.toMutableList()
+        cardsInDeck.forEach { it.faceUp = false }
         Collections.shuffle(cardsInDeck)
     }
 

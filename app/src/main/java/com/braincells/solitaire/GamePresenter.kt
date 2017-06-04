@@ -3,7 +3,7 @@ package com.braincells.solitaire
 /**
  * Created by jaldhar on 6/2/17.
  */
-class GamePresenter {
+object GamePresenter {
     var view : GameView? = null
 
     fun setGameView(gameView: GameView) {
